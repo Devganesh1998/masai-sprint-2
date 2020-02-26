@@ -1,0 +1,81 @@
+.body{
+    background-image:linear-gradient(to right,deepskyblue , lightskyblue );
+    font-family: 'Trade Winds',cursive ;
+}
+.header{
+    text-align:center;
+    font-size:2.5rem;
+}
+.header h1{
+    font-style:italic;
+    color:black;    
+}
+h2 
+{   
+    margin: 0 10% 0 30%;
+    width: 30%; 
+    float: left;
+}
+h2 + label
+{
+    margin-top: 1.5%;
+    float: left;
+}
+#day
+{
+    font-family: 'Trade Winds',cursive ;
+    font-size: 1rem;
+    width: 150px;
+    height: 50px;
+    margin: 1% 0 0 1%;
+    float: left;
+}
+.buttons
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin-left: 8%;
+    font-size: 1.5rem;
+    grid-gap: 2rem;
+}
+.input
+{
+    border: 3px solid black;
+    clear: left;
+    margin: 5% 5% 0 5%;
+}
+.input > p , #cart > p , #output > p
+{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+#add , #bill
+{
+    clear: left;
+    height: 50px;
+    width: 100px;
+    margin: 1% 0 1% 48%;
+}
+#item , input , label , #waitstaff
+{
+    font-size: 1.5rem;
+    margin-left: 0.5%;
+    font-family: 'Trade Winds',cursive ;
+}
+#cart
+{
+    text-align: center;
+    float: left;
+    width: 43%;
+    margin-left: 5%;
+    border: 3px solid black;
+}
+#output
+{
+    float: left;
+    width: 43%;
+    margin-left: 3.5%;
+    border: 3px solid black;   
+}
