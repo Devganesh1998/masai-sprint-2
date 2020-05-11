@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bill Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
-</head>
-<body class="body">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
     <div class="main">
-        <div class="header">
-            <h1>Welcome to Black_pearl Resturant</h1>
-            <h2>Bill Generator</h2>
-            <label>SELECT DAY</label>
-            <select id="day">
-                <option>MONDAY</option>
-                <option>TUESDAY</option>
-                <option>WEDNESDAY</option>
-                <option>THURSDAY</option>
-                <option>FRIDAY</option>
-                <option>SATURDAY</option>
-                <option>SUNDAY</option>
+      <div class="header">
+        <h1>Welcome to Black_pearl Resturant</h1>
+        <h2>Bill Generator</h2>
+        <label>SELECT DAY</label>
+        <select id="day">
+          <option>MONDAY</option>
+          <option>TUESDAY</option>
+          <option>WEDNESDAY</option>
+          <option>THURSDAY</option>
+          <option>FRIDAY</option>
+          <option>SATURDAY</option>
+          <option>SUNDAY</option>
+        </select>
+      </div>
+      <div class="input">
+        <p>Select Items and respective quantities to add to cart</p>
+        <hr />
+        <div class="buttons">
+          <div>
+            <label>SELECT ITEM:</label>
+            <select id="item">
+              <option>Bhunne Besan Ka Murgh Tikka </option>
+              <option>Paneer Afghani</option>
+              <option>Mutton Shashlik</option>
+              <option>Lahori Raseelay </option>
+              <option>Dahi Vada</option>
+              <option>Fried Chicken Momo</option>
+              <option>Nargisi Kofta</option>
+              <option>Stuffed Nan Pockets</option>
+              <option>Indian Spiced Chicken</option>
+              <option>Crispy Corn Chaat</option>
+              <option>Paneer Afghani</option>
+              <option>Pani puri</option>
+              <option>Chapli Kabab</option>
+              <option>Barbecue Fish Tikka</option>
+              <option>Fried Chicken </option>
+              <option>Parsi Mutton Cutlets</option>
+              <option>Crispy Corn</option>
+              <option>Barbecue Fish Tikka</option>
             </select>
+          </div>
+          <div>
+            <label>QUANTITY:</label>
+            <input type="number" name="quantity" id="quantity" />
+          </div>
+          <div>
+            <label>WAITSTAFF NAME:</label>
+            <input type="text" name="waitstaff" id="waitstaff" />
+          </div>
+          <div>
+            <label>TIP PERCENTAGE:</label>
+            <input type="number" name="tip" id="tip" />
+          </div>
         </div>
-        <div class="input">
-            <p>Select Items and respective quantities to add to cart</p>
-            <hr>
-            <div class="buttons">
-                <div>
-                    <label>SELECT ITEM:</label>
-                    <select id="item">
-                        <option>Bhunne Besan Ka Murgh Tikka </option>
-                        <option>Paneer Afghani</option>
-                        <option>Mutton Shashlik</option>
-                        <option>Lahori Raseelay </option>
-                        <option>Dahi Vada</option>
-                        <option>Fried Chicken Momo</option>
-                        <option>Nargisi Kofta</option>
-                        <option>Stuffed Nan Pockets</option>
-                        <option>Indian Spiced Chicken</option>
-                        <option>Crispy Corn Chaat</option>
-                        <option>Paneer Afghani</option>
-                        <option>Pani puri</option>
-                        <option>Chapli Kabab</option>
-                        <option>Barbecue Fish Tikka</option>
-                        <option>Fried Chicken </option>
-                        <option>Parsi Mutton Cutlets</option>
-                        <option>Crispy Corn</option>
-                        <option>Barbecue Fish Tikka</option>
-                    </select>
-                </div>
-                <div>
-                    <label>QUANTITY:</label>
-                    <input type="number" name="quantity" id="quantity">
-                </div>
-                <div>
-                    <label>WAITSTAFF NAME:</label>
-                    <input type="text" name="waitstaff" id="waitstaff">
-                </div>
-                <div>
-                    <label>TIP PERCENTAGE:</label>
-                    <input type="number"  name="tip" id="tip">
-                </div>
-            </div>
-        </div>
-        <button id="add">Add Item</button>
-        <button id="bill">Generate Bill</button>
-        <br>
-        <div id="cart">
-            <p>Items to Checkout:</p>
-            <hr>
-        </div>
-        <div id="output">
-            <p>Bill Details:</p>
-            <hr>
-        </div>
+      </div>
+      <button id="add">Add Item</button>
+      <button id="bill">Generate Bill</button>
+      <br />
+      <div id="cart">
+        <p>Items to Checkout:</p>
+        <hr />
+      </div>
+      <div id="output">
+        <p>Bill Details:</p>
+        <hr />
+      </div>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
